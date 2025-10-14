@@ -8,8 +8,10 @@ import Projects from './components/Projects.jsx';
 import Resume from './components/Resume.jsx';
 import Contact from './components/Contact.jsx';
 import Certifications from './components/Certifications.jsx';
+import MobileNav from './components/MobileNav.jsx';
 
 export default function App() {
+  const [open, setOpen] = React.useState(false);
   return (
     <div className="relative min-h-screen bg-[radial-gradient(1200px_600px_at_50%_-10%,rgba(124,58,237,0.12),transparent)]">
       <Cursor />
@@ -25,9 +27,16 @@ export default function App() {
             <a className="nav-link hover:text-white" href="#resume" data-cursor="link">Resume</a>
             <a className="nav-link hover:text-white" href="#contact" data-cursor="link">Contact</a>
           </nav>
-          <a href="#contact" className="gradient-button text-sm" data-cursor="link">Hire me</a>
+          <div className="flex items-center gap-3">
+            <a href="#contact" className="hidden sm:inline-flex gradient-button text-sm" data-cursor="link">Hire me</a>
+            <button id="hamburger" className="sm:hidden glass rounded-xl px-3 py-2 text-slate-200" data-cursor="link" aria-label="Open menu" onClick={() => setOpen(true)}>
+              ☰
+            </button>
+          </div>
         </div>
       </header>
+
+      <MobileNav open={open} onClose={() => setOpen(false)} />
 
       <main className="mx-auto max-w-6xl px-6">
         <AnimatePresence>
