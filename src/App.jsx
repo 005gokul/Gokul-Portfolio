@@ -17,9 +17,12 @@ export default function App() {
       <Cursor />
 
       <header className="sticky top-0 z-40 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <div className="mx-auto grid max-w-6xl grid-cols-[auto_1fr_auto] items-center px-6 py-4">
+          <button id="hamburger" className="sm:hidden glass rounded-xl px-3 py-2 text-slate-200" data-cursor="link" aria-label="Open menu" onClick={() => setOpen(true)}>
+            ☰
+          </button>
           <a href="#" className="text-lg font-semibold text-white" data-cursor="link">Gokul<span className="text-brand-500">.</span></a>
-          <nav className="hidden gap-6 text-sm text-slate-300 sm:flex">
+          <nav className="hidden sm:flex justify-center justify-self-center gap-6 text-sm text-slate-300">
             <a className="nav-link hover:text-white" href="#about" data-cursor="link">About</a>
             <a className="nav-link hover:text-white" href="#certifications" data-cursor="link">Certifications</a>
             <a className="nav-link hover:text-white" href="#skills" data-cursor="link">Skills</a>
@@ -27,11 +30,8 @@ export default function App() {
             <a className="nav-link hover:text-white" href="#resume" data-cursor="link">Resume</a>
             <a className="nav-link hover:text-white" href="#contact" data-cursor="link">Contact</a>
           </nav>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-end gap-3">
             <a href="#contact" className="hidden sm:inline-flex gradient-button text-sm" data-cursor="link">Hire me</a>
-            <button id="hamburger" className="sm:hidden glass rounded-xl px-3 py-2 text-slate-200" data-cursor="link" aria-label="Open menu" onClick={() => setOpen(true)}>
-              ☰
-            </button>
           </div>
         </div>
       </header>

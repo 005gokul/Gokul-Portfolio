@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="mx-auto max-w-3xl text-slate-300 text-center"
+            className="mx-auto max-w-3xl text-slate-300 text-justify"
           >
             I am a skilled developer with a B.Tech in Information Technology and a proven ability to deliver high‑quality
             software solutions. With a strong foundation in Java, React.js, and SAP technologies, I specialize in building
