@@ -7,7 +7,6 @@ import Skills from './components/Skills.jsx';
 import Projects from './components/Projects.jsx';
 import Resume from './components/Resume.jsx';
 import Contact from './components/Contact.jsx';
-import Education from './components/Education.jsx';
 import Certifications from './components/Certifications.jsx';
 
 export default function App() {
@@ -19,13 +18,12 @@ export default function App() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#" className="text-lg font-semibold text-white" data-cursor="link">Gokul<span className="text-brand-500">.</span></a>
           <nav className="hidden gap-6 text-sm text-slate-300 sm:flex">
-            <a className="hover:text-white" href="#about" data-cursor="link">About</a>
-            <a className="hover:text-white" href="#education" data-cursor="link">Education</a>
-            <a className="hover:text-white" href="#certifications" data-cursor="link">Certifications</a>
-            <a className="hover:text-white" href="#skills" data-cursor="link">Skills</a>
-            <a className="hover:text-white" href="#projects" data-cursor="link">Projects</a>
-            <a className="hover:text-white" href="#resume" data-cursor="link">Resume</a>
-            <a className="hover:text-white" href="#contact" data-cursor="link">Contact</a>
+            <a className="nav-link hover:text-white" href="#about" data-cursor="link">About</a>
+            <a className="nav-link hover:text-white" href="#certifications" data-cursor="link">Certifications</a>
+            <a className="nav-link hover:text-white" href="#skills" data-cursor="link">Skills</a>
+            <a className="nav-link hover:text-white" href="#projects" data-cursor="link">Projects</a>
+            <a className="nav-link hover:text-white" href="#resume" data-cursor="link">Resume</a>
+            <a className="nav-link hover:text-white" href="#contact" data-cursor="link">Contact</a>
           </nav>
           <a href="#contact" className="gradient-button text-sm" data-cursor="link">Hire me</a>
         </div>
@@ -38,10 +36,6 @@ export default function App() {
 
         <section id="about" className="scroll-mt-24">
           <About />
-        </section>
-
-        <section id="education" className="scroll-mt-24">
-          <Education />
         </section>
 
         <section id="certifications" className="scroll-mt-24">

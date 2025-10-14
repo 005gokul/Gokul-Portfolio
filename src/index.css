@@ -30,6 +30,38 @@
     filter: brightness(1.07);
     box-shadow: 0 12px 40px rgba(139, 92, 246, 0.45);
   }
+
+  /* Hover-only gradient variant for buttons */
+  .gradient-hover {
+    @apply relative inline-flex items-center justify-center rounded-full px-5 py-2.5 font-medium text-slate-200 transition-all duration-300 glass;
+    box-shadow: 0 6px 22px rgba(139, 92, 246, 0.0);
+  }
+  .gradient-hover:hover {
+    color: white;
+    background: linear-gradient(90deg, #8b5cf6, #06b6d4);
+    border-color: transparent;
+    box-shadow: 0 12px 38px rgba(139, 92, 246, 0.45);
+    filter: brightness(1.03);
+  }
+
+  /* Professional nav underline on hover */
+  .nav-link {
+    @apply relative inline-block transition-colors duration-200;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #8b5cf6, #06b6d4);
+    transition: width 220ms ease, left 220ms ease;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
 }
 
 
