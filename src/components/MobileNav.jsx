@@ -14,10 +14,10 @@ export default function MobileNav({ open, onClose }) {
             onClick={onClose}
           />
           <motion.aside
-            className="fixed right-0 top-0 z-50 h-full w-72 bg-slate-900/95 backdrop-blur-xl border-l border-white/10 p-6 text-slate-200"
-            initial={{ x: 320 }}
+            className="fixed left-0 top-0 z-50 h-full w-72 bg-slate-900/95 backdrop-blur-xl border-r border-white/10 p-6 text-slate-200"
+            initial={{ x: -320 }}
             animate={{ x: 0 }}
-            exit={{ x: 320 }}
+            exit={{ x: -320 }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
           >
             <div className="flex items-center justify-between">
