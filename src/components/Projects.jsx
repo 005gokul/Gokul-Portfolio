@@ -11,18 +11,18 @@ const projects = [
     code: 'https://github.com/005gokul/SmartProductCatalog',
   },
   {
+    title: 'Hospital OPD',
+    desc:
+      'Hospital Outpatient Department (OPD) management system for patient registration, appointment scheduling, and healthcare administration.',
+    img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=1200&auto=format&fit=crop',
+    code: 'https://github.com/005gokul/Hospital-OPD',
+  },
+  {
     title: 'BankManagement',
     desc:
       'Java console app simulating core banking: account creation, transactions, and balance management with clean OOP structure.',
     img: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop',
     code: 'https://github.com/005gokul/BankManagement',
-  },
-  {
-    title: 'Application-for-small-scale-job-requirement-',
-    desc:
-      'Small-scale job application/requirement project. Front-end focused implementation.',
-    img: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop',
-    code: 'https://github.com/005gokul/Application-for-small-scale-job-requirement-',
   },
   {
     title: 'E-commerce',
