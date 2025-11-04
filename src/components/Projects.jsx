@@ -14,7 +14,7 @@ const projects = [
     title: 'Hospital OPD',
     desc:
       'Hospital Outpatient Department (OPD) management system for patient registration, appointment scheduling, and healthcare administration.',
-    img: 'https://images.unsplash.com/photo-1512678080530-7d56d2d1e6d3?q=80&w=1200&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1584432810601-6c7f27d6d716?q=80&w=1200&auto=format&fit=crop',
     code: 'https://github.com/005gokul/Hospital-OPD',
   },
   {
@@ -71,7 +71,9 @@ export default function Projects() {
             data-cursor="link"
           >
             <div className="relative aspect-video overflow-hidden">
-              <img src={p.img} alt="project" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={p.img} alt="project" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" onError={(e) => {
+                e.currentTarget.src = 'https://images.unsplash.com/photo-1584432810601-6c7f27d6d716?q=80&w=1200&auto=format&fit=crop';
+              }} />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/50 to-transparent" />
             </div>
             <div className="space-y-2 p-4">
