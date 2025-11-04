@@ -14,7 +14,7 @@ const projects = [
     title: 'Hospital OPD',
     desc:
       'Hospital Outpatient Department (OPD) management system for patient registration, appointment scheduling, and healthcare administration.',
-    img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=1200&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1512678080530-7d56d2d1e6d3?q=80&w=1200&auto=format&fit=crop',
     code: 'https://github.com/005gokul/Hospital-OPD',
   },
   {
